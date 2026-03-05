@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <input id="email" type="email" placeholder="user@example.com">
+    <input id="password" type="password" placeholder="password">
+    <input type="submit" value="Sign In" onclick="checkPWD()">
+    <h1 id="alert"></h1>
+    <script>
+      const password = document.getElementById("password").value;
+      const theAlert = document.getElementById("alert");
+      function checkPWD() {
+      if (password === "1889298178112838") {
+        theAlert.textContent = "CORRECT!";
+      } else {
+        theAlert.textContent = "WRONG!";
+      }
+      }
+    </script>
+  </body>
+</html>
